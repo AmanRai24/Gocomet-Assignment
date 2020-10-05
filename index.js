@@ -1,11 +1,19 @@
 const express = require("express");
 const app = express();
+const port=8000;
+
+//use express router
+app.use('/',require('./routes'));
 
 // set up template engine
 app.set("view engine", "ejs");
+app.set('views','./views');
 
-app.listen(3000,()=>{
-    console.log("Running on port:3000")
+app.listen(port, function(err){
+    if(err){
+        console.log(`Error in running the server: ${err}`);
+    }
+    console.log("Server is running on port:8000");
 })
 
 module.exports=app;
