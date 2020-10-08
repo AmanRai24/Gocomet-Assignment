@@ -1,4 +1,4 @@
-var socket = io('http://localhost:8000');
+var socket = io();
         $('form').submit((e) => {
             e.preventDefault();
             socket.emit('tag' , $('#tag').val());
