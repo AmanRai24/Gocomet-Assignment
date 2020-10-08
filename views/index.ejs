@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gocomet</title>
+        <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+<body>
+    <nav class="navbar">
+        <div>
+            <h1>Medium Crawler</h1>
+        </div>
+        <div class="search">
+            <form class="typehere">
+                <input type="text" name="tag" id="tag" placeholder="Type Here...">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <button onclick="history()"><i class="fa fa-history" aria-hidden="true"></i></button>
+    </nav>
+
+    <div class="history">
+        <!-- <button class="history-tag"></button> -->
+    </div>
+
+    <div class="crawler-container">
+        <div class="related-tags-container">
+            <h2>Related Tags</h2>
+            <div class="related-tags">
+                <!-- <div class="tag">
+                    <button>Medium</button>
+                </div> -->
+            </div>
+        </div>
+        <div class="blogs">
+            <div class="crawled-blogs">
+                <!-- <div class="blog">
+                    <p class="author">Created By: Aman</p>
+                    <p class="">Created On: 04 Oct</p>
+                    <p>2 min read</p>
+                    <img src="" alt="">
+                    <a></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/socket.js"></script>
+</body>
+</html>

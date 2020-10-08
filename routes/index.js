@@ -4,6 +4,7 @@ const homeController=require('../controllers/home-controller');
 
 console.log('router loaded');
 
-router.get('/',homeController.home);
+router.get('/',homeController.index);
+router.get('/history',homeController.history);
 
 module.exports=router;
